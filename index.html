@@ -7,8 +7,22 @@
     <title>Document</title>
 </head>
 <body onload='createDivs()'>
-    <div class='resetBtn'>
-        <button onclick='reset()'>Reset</button>
+    <div class='btnArea'>
+        <div class='resetBtn'>
+            <button onclick='reset()'>Reset</button>
+        </div>
+        <div class='colorMenu'>
+            <label class='btnArea'>Colors</label>
+            <div class="colors">
+                <button onclick="changeColors('blue')">Blue</button>
+                <button onclick="changeColors('red')">Red</button>
+                <button onclick="changeColors('green')">Green</button>
+                <button onclick="changeColors('yellow')">Yellow</button>
+                <button onclick="changeColors('black')">Black</button>
+                <button onclick="changeColors('white')">White</button>
+                <button onclick="changeColors('grey')">grey</button>
+            </div>
+        </div>
     </div>
     <div id='container'>
         

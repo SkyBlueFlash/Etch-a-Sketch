@@ -1,3 +1,5 @@
+var color = 'white';
+
 function createDivs(num= 16) {
     let container = document.getElementById("container");
     for (let i = 0; i < num; ++i) {
@@ -17,7 +19,7 @@ function createDivs(num= 16) {
 }
 
 function changeColor(Event) {
-    Event.currentTarget.style.backgroundColor = "red";
+    Event.currentTarget.style.backgroundColor = color; 
 }
 
 function reset() {
@@ -34,4 +36,8 @@ function clear(node) {
       clear(node.firstChild);
     }
     node.parentNode.removeChild(node);
-  }
+}
+
+function changeColors(col) {
+    color = col;  
+}
