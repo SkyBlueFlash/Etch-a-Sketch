@@ -6,7 +6,7 @@ function createDivs() {
         for (let j = 0; j < 16; ++j) {
             let divChild = document.createElement('div');
             let p = document.createElement('p');
-            p.addEventListener('mouseover', changeColor(Event));
+            divChild.addEventListener('mouseenter', changeColor);
             divChild.classList.add("divChild");
             div.appendChild(divChild);
             divChild.appendChild(p);
@@ -16,6 +16,10 @@ function createDivs() {
     }
 }
 
-function changeColor(e) {
-    alert(e);
+function changeColor(Event) {
+    Event.currentTarget.style.backgroundColor = "red";
+}
+
+function reset() {
+
 }
